@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  background-image: url(/images/lukasz-lada-LtWFFVi1RXQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "poppins", sans-serif;
+}
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  width: 20rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ----------- Log in  box ------------ */
+.login-box.active {
+  background: linear-gradient(to right, #66ccff 0%, #ff99cc 69%);
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0rem;
+  transition: 2s ease;
+}
+
+.login-box.hidden {
+  right: 320px;
+  transition: 2s ease;
+}
+
+/* -------- input forms --------- */
+
+.login-box input {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  color: rgb(252, 249, 249);
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.login-box .checkbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: rgb(245, 138, 245);
+  transform: translateY(3px);
+  margin-top: 0rem;
+}
+
+/* ----------- buttons -------*/
+.submit-btn {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin: 2.5rem 0rem 0.5rem 0rem;
+  border-radius: 50px;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover,
+.signin-btn:hover,
+.signup-btn:hover {
+  opacity: 10;
+}
+
+.switch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+}
+
+.signup-switch,
+.signin-switch {
+  width: 10rem;
+  padding: 2rem;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 1rem;
+  color: black;
+}
+
+.signup-switch:hover,
+.signin-switch:hover,
+.signin-switch.active,
+.signup-switch.active {
+  opacity: 10;
+}
+
+/* ------- checkbox -------*/
+.remember,
+.term {
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* ----- links------- */
+.forgot {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/*----- text ----- */
+
+.login-box h1 {
+  color: white;
+  margin: 3rem 0rem;
+}
+
+/* ----------- Sign up box ------------ */
+
+.signup-box.hidden {
+  background: linear-gradient(to left, #66ccff 0%, #ff99cc 69%);
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -320px;
+  transition: 2s ease;
+}
+
+.signup-box.active {
+  background: linear-gradient(to left, #66ccff 0%, #ff99cc 69%);
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0rem;
+  transition: 2s ease;
+}
+
+.signup-box .checkbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: rgb(31, 214, 246);
+  transform: translateY(3px);
+  margin-top: 0.5rem;
+}
+
+.signup-box a {
+  font-style: italic;
+}
+
+.signup-box h1 {
+  color: white;
+  margin: 2rem 0rem;
+}
+
+.signup-box input {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  color: rgb(252, 249, 249);
+  font-size: 1rem;
+  margin: 0.3rem 0rem;
+}

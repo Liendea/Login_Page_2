@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login 2.0</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <!--------------- switch buttons --------------->
+      <div class="switch-wrapper">
+        <button type="button" class="signin-switch active">Log in</button>
+        <button type="button" class="signup-switch">Sign up</button>
+      </div>
+      
+
+      <!--------------- Log in box --------------->
+      <div class="login-box active">
+        <h1>Welcome</h1>
+
+        <form action="#" method="">
+          <!-- Ange action och metod-->
+          <div>
+            <label>
+              <input
+                type="text"
+                name="username"
+                id="username-input"
+                placeholder="Username"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              <input
+                type="password"
+                name="Password"
+                id="password-input"
+                placeholder="Password"
+                required
+              />
+            </label>
+          </div>
+          <div class="remember">
+            <label>
+              <input
+                type="checkbox"
+                name="Remember-Checkbox"
+                id="remember-checkbox"
+                class="checkbox"
+              />
+              Remember me
+            </label>
+          </div>
+          <div>
+            <button type="submit" name="submit" class="submit-btn">
+              Log in
+            </button>
+          </div>
+          <div class="forgot">
+            <a href="#">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+  
+    <!--------------- sign up  in box --------------->
+
+    <div class="signup-box hidden">
+      <h1>Register</h1>
+
+      <form action="#" method="">
+        <!-- Ange action och metod för att formulär ska fungera -->
+        <div>
+          <label>
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="Email"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              type="text"
+              name="register-username"
+              id="register-username-input"
+              placeholder="Username"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              type="register-password"
+              name="Register-Password"
+              id="register-password-input"
+              placeholder="Password"
+              required
+            />
+          </label>
+        </div>
+        <div class="term">
+          <label>
+            <input
+              type="checkbox"
+              name="terms-Checkbox"
+              id="terms-checkbox"
+              class="checkbox"
+              required
+            />
+            Agree to
+            <a href="#">terms & conditions</a>
+          </label>
+        </div>
+        <div>
+          <button type="submit" name="submit" class="submit-btn">
+            Create account
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+    </body>
+
+  <script src="script.js"></script>
+  </body>
+</html>

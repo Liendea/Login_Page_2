@@ -1,3 +1,5 @@
-# This is a school project
+# Log in page
 
-# This project uses HTML, CSS and Javascript
+# This is a school project: F25D YH-Borås
+
+### This project uses HTML, CSS and Javascript

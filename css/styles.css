@@ -39,7 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
   right: 0rem;
   transition: 2s ease;
@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
   right: 320px;
   transition: 2s ease;
@@ -177,7 +177,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
   right: -320px;
   top: 5rem;
@@ -192,7 +192,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
   right: 0rem;
   top: 5rem;
@@ -227,7 +227,6 @@ h1 {
 
 .forgot-box.active {
   position: absolute;
-  background: #ff99cc;
   width: 20rem;
   height: 20rem;
   display: flex;
@@ -235,13 +234,12 @@ h1 {
   align-items: center;
   justify-content: center;
   transition: 2s ease-in;
-  top: 10rem;
+  top: 8rem;
   border-radius: 50px;
 }
 
 .forgot-box.hidden {
   position: absolute;
-  background: #ff99cc;
   width: 20rem;
   height: 30rem;
   display: flex;

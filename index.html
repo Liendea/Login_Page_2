@@ -11,8 +11,8 @@
 
       <!--------------- switch buttons --------------->
       <div class="switch-wrapper">
-        <button type="button" class="signin-switch active">Log in</button>
-        <button type="button" class="signup-switch">Sign up</button>
+        <button type="button" class="signin-switch active">LOG IN</button>
+        <button type="button" class="signup-switch">SIGN UP</button>
       </div>
       
 
@@ -60,7 +60,7 @@
               Log in
             </button>
           </div>
-          <div class="forgot">
+          <div class="forgot-link">
             <a href="#">Forgot password?</a>
           </div>
         </form>
@@ -126,6 +126,33 @@
         </div>
       </form>
     </div>
+
+    <!--------------- forgot password box --------------->
+
+    <div class="forgot-box hidden">
+      <h1>Reset password</h1>
+
+      <form action="#" method="">
+        <!-- Ange action och metod för att formulär ska fungera -->
+        <div>
+          <label>
+            <input
+              type="email"
+              name="forgot-email"
+              id="forgot-email-input"
+              placeholder="Email"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <button type="submit" name="submit" class="submit-btn">
+            Send password
+          </button>
+        </div>
+      </form>
+    </div>
+
 
   </div>
     </body>

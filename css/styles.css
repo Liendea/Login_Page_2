@@ -19,8 +19,7 @@ body {
 }
 
 .wrapper {
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
+  background-color: #ff99cc;
   width: 20rem;
   height: 35rem;
   display: flex;
@@ -44,11 +43,23 @@ body {
   position: absolute;
   right: 0rem;
   transition: 2s ease;
+  top: 5rem;
+  border-radius: 0px 0px 0px 20px;
 }
 
 .login-box.hidden {
+  background: linear-gradient(to right, #66ccff 0%, #ff99cc 69%);
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
   right: 320px;
   transition: 2s ease;
+  border-radius: 0px 0px 0px 20px;
+  top: 5rem;
 }
 
 /* -------- input forms --------- */
@@ -98,7 +109,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0px;
+  top: -2px;
 }
 
 .signup-switch,
@@ -107,16 +118,23 @@ input::placeholder {
   padding: 2rem;
   border: none;
   cursor: pointer;
-  opacity: 0.5;
   font-size: 1rem;
   color: black;
+  background-color: rgb(204, 192, 224);
+}
+
+.signup-switch {
+  border-radius: 0px 20px 0px 0px;
+}
+.signin-switch {
+  border-radius: 20px 0px 0px 0px;
 }
 
 .signup-switch:hover,
 .signin-switch:hover,
 .signin-switch.active,
 .signup-switch.active {
-  opacity: 10;
+  background-color: white;
 }
 
 /* ------- checkbox -------*/
@@ -127,7 +145,8 @@ input::placeholder {
 }
 
 /* ----- links------- */
-.forgot {
+
+.forgot-link {
   display: flex;
   justify-content: center;
   color: white;
@@ -144,7 +163,7 @@ a:hover {
 }
 /*----- text ----- */
 
-.login-box h1 {
+h1 {
   color: white;
   margin: 3rem 0rem;
 }
@@ -161,7 +180,9 @@ a:hover {
   justify-content: center;
   position: absolute;
   right: -320px;
+  top: 5rem;
   transition: 2s ease;
+  border-radius: 0px 0px 20px 0px;
 }
 
 .signup-box.active {
@@ -174,7 +195,20 @@ a:hover {
   justify-content: center;
   position: absolute;
   right: 0rem;
+  top: 5rem;
   transition: 2s ease;
+  border-radius: 0px 0px 20px 0px;
+}
+
+.signup-box input {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  color: rgb(252, 249, 249);
+  font-size: 1rem;
+  margin: 0.3rem 0rem;
 }
 
 .signup-box .checkbox {
@@ -189,12 +223,37 @@ a:hover {
   font-style: italic;
 }
 
-.signup-box h1 {
-  color: white;
-  margin: 2rem 0rem;
+/* ----------- Forgot password box ------------ */
+
+.forgot-box.active {
+  position: absolute;
+  background: #ff99cc;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 2s ease-in;
+  top: 10rem;
+  border-radius: 50px;
 }
 
-.signup-box input {
+.forgot-box.hidden {
+  position: absolute;
+  background: #ff99cc;
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  top: 35rem;
+  border-radius: 220px;
+}
+
+.forgot-box input {
   padding: 0.5rem;
   background: none;
   border: none;
@@ -202,5 +261,4 @@ a:hover {
   outline: none;
   color: rgb(252, 249, 249);
   font-size: 1rem;
-  margin: 0.3rem 0rem;
 }

@@ -31,11 +31,13 @@ body {
   overflow: hidden;
 }
 
-/* ----------- Log in  box ------------ */
-.login-box.active {
+/* ========== Log in Box ========== 
+   ================================ */
+
+.login-box {
   background: linear-gradient(to right, #66ccff 0%, #ff99cc 69%);
   width: 20rem;
-  height: 30rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,21 +50,59 @@ body {
 }
 
 .login-box.hidden {
-  background: linear-gradient(to right, #66ccff 0%, #ff99cc 69%);
+  right: 320px;
+  transition: 2s ease;
+}
+
+/* ========== Sign Up Box ========== 
+   ================================= */
+
+.signup-box {
+  background: linear-gradient(to left, #66ccff 0%, #ff99cc 69%);
   width: 20rem;
-  height: 30rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   position: absolute;
-  right: 320px;
-  transition: 2s ease;
-  border-radius: 0px 0px 0px 20px;
+  right: 0rem;
   top: 5rem;
+  transition: 2s ease;
+  border-radius: 0px 0px 20px 0px;
 }
 
-/* -------- input forms --------- */
+.signup-box.hidden {
+  right: -320px;
+  transition: 2s ease;
+}
+
+/* ========== Forgot Password Box ========== 
+   ========================================= */
+
+.forgot-box {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 1.8s ease-in;
+  top: 8rem;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.forgot-box.hidden {
+  transition: 0.5s ease;
+  top: 35rem;
+}
+
+/* ========== input forms ========== 
+   ================================= */
+
+/* Login box input forms */
 
 .login-box input {
   padding: 0.5rem;
@@ -87,7 +127,51 @@ input::placeholder {
   margin-top: 0rem;
 }
 
-/* ----------- buttons -------*/
+/* Sign up box input forms */
+
+.signup-box input {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  color: rgb(252, 249, 249);
+  font-size: 1rem;
+  margin: 0.3rem 0rem;
+}
+
+.remember,
+.terms {
+  color: white;
+  font-size: 0.8rem;
+}
+.terms .checkbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: rgb(31, 214, 246);
+  transform: translateY(3px);
+  margin-top: 0.5rem;
+}
+
+.terms a {
+  font-style: italic;
+}
+
+/* Forgot box input forms */
+
+.forgot-box input {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  color: rgb(252, 249, 249);
+  font-size: 1rem;
+}
+
+/* ========== Buttons ========== 
+   ================================= */
+
 .submit-btn {
   width: 100%;
   padding: 1rem 0.5rem;
@@ -98,9 +182,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.submit-btn:hover,
-.signin-btn:hover,
-.signup-btn:hover {
+.submit-btn:hover {
   opacity: 10;
 }
 
@@ -109,9 +191,10 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: -2px;
+  top: -1px;
 }
 
+/* Switch- buttons */
 .signup-switch,
 .signin-switch {
   width: 10rem;
@@ -123,6 +206,15 @@ input::placeholder {
   background-color: rgb(204, 192, 224);
 }
 
+.signup-switch:hover,
+.signin-switch:hover {
+  background-color: rgba(255, 255, 255, 0.722);
+}
+
+.signin-switch.active,
+.signup-switch.active {
+  background-color: white;
+}
 .signup-switch {
   border-radius: 0px 20px 0px 0px;
 }
@@ -130,21 +222,8 @@ input::placeholder {
   border-radius: 20px 0px 0px 0px;
 }
 
-.signup-switch:hover,
-.signin-switch:hover,
-.signin-switch.active,
-.signup-switch.active {
-  background-color: white;
-}
-
-/* ------- checkbox -------*/
-.remember,
-.term {
-  color: white;
-  font-size: 0.8rem;
-}
-
-/* ----- links------- */
+/* ========== Links ========== 
+   ================================= */
 
 .forgot-link {
   display: flex;
@@ -161,102 +240,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/*----- text ----- */
+
+/* ========== Text ========== 
+   ================================= */
 
 h1 {
   color: white;
   margin: 3rem 0rem;
-}
-
-/* ----------- Sign up box ------------ */
-
-.signup-box.hidden {
-  background: linear-gradient(to left, #66ccff 0%, #ff99cc 69%);
-  width: 20rem;
-  height: 30rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  right: -320px;
-  top: 5rem;
-  transition: 2s ease;
-  border-radius: 0px 0px 20px 0px;
-}
-
-.signup-box.active {
-  background: linear-gradient(to left, #66ccff 0%, #ff99cc 69%);
-  width: 20rem;
-  height: 30rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  right: 0rem;
-  top: 5rem;
-  transition: 2s ease;
-  border-radius: 0px 0px 20px 0px;
-}
-
-.signup-box input {
-  padding: 0.5rem;
-  background: none;
-  border: none;
-  border-bottom: 1px solid;
-  outline: none;
-  color: rgb(252, 249, 249);
-  font-size: 1rem;
-  margin: 0.3rem 0rem;
-}
-
-.signup-box .checkbox {
-  width: 1rem;
-  height: 1rem;
-  accent-color: rgb(31, 214, 246);
-  transform: translateY(3px);
-  margin-top: 0.5rem;
-}
-
-.signup-box a {
-  font-style: italic;
-}
-
-/* ----------- Forgot password box ------------ */
-
-.forgot-box.active {
-  position: absolute;
-  width: 20rem;
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 2s ease-in;
-  top: 8rem;
-  border-radius: 50px;
-}
-
-.forgot-box.hidden {
-  position: absolute;
-  width: 20rem;
-  height: 30rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s ease;
-  top: 35rem;
-  border-radius: 220px;
-}
-
-.forgot-box input {
-  padding: 0.5rem;
-  background: none;
-  border: none;
-  border-bottom: 1px solid;
-  outline: none;
-  color: rgb(252, 249, 249);
-  font-size: 1rem;
 }

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: rgb(187, 174, 183);
   background-image: url(/images/lukasz-lada-LtWFFVi1RXQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,9 +31,7 @@ body {
   overflow: hidden;
 }
 
-/* ========== Log in Box ========== 
-   ================================ */
-
+/* ========== Log in Box ========== */
 .login-box {
   background: linear-gradient(to right, #66ccff 0%, #ff99cc 69%);
   width: 20rem;
@@ -54,9 +52,7 @@ body {
   transition: 2s ease;
 }
 
-/* ========== Sign Up Box ========== 
-   ================================= */
-
+/* ========== Sign Up Box ========== */
 .signup-box {
   background: linear-gradient(to left, #66ccff 0%, #ff99cc 69%);
   width: 20rem;
@@ -77,9 +73,7 @@ body {
   transition: 2s ease;
 }
 
-/* ========== Forgot Password Box ========== 
-   ========================================= */
-
+/* ========== Forgot Password Box ========== */
 .forgot-box {
   position: absolute;
   width: 20rem;
@@ -99,11 +93,9 @@ body {
   top: 35rem;
 }
 
-/* ========== input forms ========== 
-   ================================= */
+/* ========== input forms ========== */
 
 /* Login box input forms */
-
 .login-box input {
   padding: 0.5rem;
   background: none;
@@ -128,7 +120,6 @@ input::placeholder {
 }
 
 /* Sign up box input forms */
-
 .signup-box input {
   padding: 0.5rem;
   background: none;
@@ -158,7 +149,6 @@ input::placeholder {
 }
 
 /* Forgot box input forms */
-
 .forgot-box input {
   padding: 0.5rem;
   background: none;
@@ -169,23 +159,25 @@ input::placeholder {
   font-size: 1rem;
 }
 
-/* ========== Buttons ========== 
-   ================================= */
-
+/* ========== Buttons ========== */
 .submit-btn {
   width: 100%;
   padding: 1rem 0.5rem;
   margin: 2.5rem 0rem 0.5rem 0rem;
   border-radius: 50px;
-  opacity: 0.5;
   border: none;
   cursor: pointer;
 }
 
 .submit-btn:hover {
-  opacity: 10;
+  background-color: white;
 }
 
+#reset-password-btn {
+  margin-top: 5rem;
+}
+
+/* Switch- buttons */
 .switch-wrapper {
   display: flex;
   justify-content: center;
@@ -194,7 +186,6 @@ input::placeholder {
   top: -1px;
 }
 
-/* Switch- buttons */
 .signup-switch,
 .signin-switch {
   width: 10rem;
@@ -222,9 +213,7 @@ input::placeholder {
   border-radius: 20px 0px 0px 0px;
 }
 
-/* ========== Links ========== 
-   ================================= */
-
+/* ========== Links ========== */
 .forgot-link {
   display: flex;
   justify-content: center;
@@ -241,9 +230,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ========== Text ========== 
-   ================================= */
-
+/* ========== Text ========== */
 h1 {
   color: white;
   margin: 3rem 0rem;

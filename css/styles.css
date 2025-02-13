@@ -41,9 +41,9 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: absolute;
-  right: 0rem;
+  right: 0;
   transition: 2s ease;
-  top: 5rem;
+  top: 81px;
   border-radius: 0px 0px 0px 20px;
 }
 
@@ -63,7 +63,7 @@ body {
   justify-content: flex-start;
   position: absolute;
   right: 0rem;
-  top: 5rem;
+  top: 81px;
   transition: 2s ease;
   border-radius: 0px 0px 20px 0px;
 }
@@ -186,6 +186,7 @@ input::placeholder {
   align-items: center;
   position: absolute;
   top: -1px;
+  z-index: 10;
 }
 
 .signup-switch,

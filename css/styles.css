@@ -167,6 +167,7 @@ input::placeholder {
   border-radius: 50px;
   border: none;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .submit-btn:hover {

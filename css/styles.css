@@ -161,6 +161,7 @@ input::placeholder {
 
 /* ========== Buttons ========== */
 .submit-btn {
+  background-color: lightgrey;
   width: 100%;
   padding: 1rem 0.5rem;
   margin: 2.5rem 0rem 0.5rem 0rem;
